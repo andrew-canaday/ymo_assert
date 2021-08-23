@@ -30,19 +30,14 @@
 
 /** # ymo_assert.h
  *
- * This is a simple collection of assertion convenience macros I found in an old
- * project. I figured I'd share in case they were of any utility.
- *
- * Run `make check` to see an example.
- *
- * This project is licensed under the MIT license. See COPYING for more info.
- *
- * ### About
- *
  * These are just a handful of assertion macro definitions from an old project
  * of mine.  They don't do much beyond what you can do with `assert()`.  If
  * you're using a unit test library, you definitely don't need them!  They're
  * just handy for small programs / `check_PROGRAMS` targets.
+ *
+ * Run `make check` to see an example.
+ *
+ * This project is licensed under the MIT license. See COPYING for more info.
  *
  * > :information_source: Documentation is generated using
  * > [pomd4c](https://github.com/andrew-canaday/pomd4c).
