@@ -129,7 +129,7 @@ void basic_assertions(void)
     ymo_assert(two == two);
     ymo_assert(two != three);
     return;
-}
+};
 ```
 
 
@@ -144,7 +144,10 @@ PASS: this_str != that_str (example.c:string_assertions:61)
 PASS: this_str != null_str (example.c:string_assertions:62)
 PASS: this_str != NULL (example.c:string_assertions:63)
 PASS: "the subway is neat" contains "sub" (example.c:string_assertions:64)
-PASS: haystack starts with needle (example.c:string_assertions:65)
+PASS: "prefix" starts with "pre" (example.c:string_assertions:96)
+PASS: haystack starts with "pre" (example.c:string_assertions:97)
+PASS: "prefix" starts with needle (example.c:string_assertions:98)
+PASS: haystack starts with needle (example.c:string_assertions:99)
 ```
 
 ```C
@@ -165,9 +168,12 @@ void string_assertions(void)
     ymo_assert_str_ne(this_str, null_str);
     ymo_assert_str_ne(this_str, NULL);
     ymo_assert_str_contains("the subway is neat", "sub");
+    ymo_assert_str_startswith("prefix", "pre");
+    ymo_assert_str_startswith(haystack, "pre");
+    ymo_assert_str_startswith("prefix", needle);
     ymo_assert_str_startswith(haystack, needle);
     return;
-}
+};
 ```
 
 
