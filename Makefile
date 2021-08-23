@@ -10,6 +10,7 @@ clean:
 
 doc:
 	pomd4c ./ymo_assert.h > ./README.md
+	pomd4c ./example.c >> ./README.md
 
 check: example
 	./example
