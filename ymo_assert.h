@@ -103,10 +103,11 @@
 #ifndef NDEBUG
 # define ymo_assert_condition(test_cond, test_desc) \
     do { \
-        if( !(test_cond) ) { \
+        if( test_cond ) { \
+            ymo_assert_pass(test_desc); \
+        } else { \
             ymo_assert_fail(test_desc); \
-        }; \
-        ymo_assert_pass(test_desc); \
+        } \
     } while(0)
 #else
 #define ymo_assert_condition(test_cond, test_desc) ((void)0)
