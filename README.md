@@ -5,6 +5,9 @@ of mine.  They don't do much beyond what you can do with `assert()`.  If
 you're using a unit test library, you definitely don't need them!  They're
 just handy for small programs / `check_PROGRAMS` targets.
 
+(If you're looking for a lightweight unit test framework for C + a richer set of
+assertion macros, have a look at [Unity](https://github.com/ThrowTheSwitch/Unity)).
+
 Run `make check` to see an example.
 
 This project is licensed under the MIT license. See COPYING for more info.
